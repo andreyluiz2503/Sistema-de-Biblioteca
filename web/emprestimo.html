@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Empréstimo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+  <h2>Registrar Empréstimo</h2>
+  <form onsubmit="return validarEmprestimo();">
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="livro">Nome do Livro:</label>
+    <input type="text" id="livro" name="livro" required>
+
+    <label for="data">Data do Empréstimo:</label>
+    <input type="date" id="data" name="data" required>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <a href="index.html">Voltar</a>
+</body>
+</html>
